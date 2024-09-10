@@ -15,14 +15,14 @@ Ansible ad-hoc commands are simple, one-time use commands executed without the n
 
 ## Example Ad-hoc Commands:
 
-1. Ping all hosts
+**1. Ping all hosts**
 
 ````
 ansible all -m ping
 ````
 This command checks the connectivity with all hosts in the inventory.
 
-2. Install a package:
+**2. Install a package:**
 
 ````
 ansible web -m dnf -a "name=httpd state=present" --become
@@ -30,7 +30,7 @@ ansible web -m dnf -a "name=httpd state=present" --become
 ````
 This installs the httpd package on hosts in the webservers group using the yum module
 
-3. Start the httpd in the target node from the controller
+**3. Start the httpd in the target node from the controller**
 
 ````
 ansible web -m service -a "name=httpd state=started" --become
