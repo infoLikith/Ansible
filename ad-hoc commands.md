@@ -1,4 +1,4 @@
-# Ansible Ad hoc commands
+# Ansible Ad-hoc commands
 Ansible ad-hoc commands are simple, one-time use commands executed without the need for a playbook. They are mainly used for quick tasks or testing purposes. These commands allow you to perform actions across multiple hosts specified in your inventory file.
 
 ## Ad-hoc commands are useful for:
