@@ -26,7 +26,6 @@ This command checks the connectivity with all hosts in the inventory.
 
 ````
 ansible web -m dnf -a "name=httpd state=present" --become
-
 ````
 This installs the httpd package on hosts in the webservers group using the yum module
 
