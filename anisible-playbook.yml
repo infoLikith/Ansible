@@ -1,0 +1,14 @@
+- name: First Task - Manage Web Servers
+  hosts: web
+  become: yes
+  tasks:
+    - name: Install Apache web server
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start Apache web server
+      service:
+        name: httpd
+        state: started
+        enabled: yes
